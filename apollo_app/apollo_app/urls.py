@@ -18,12 +18,10 @@ from django.contrib import admin
 from django.contrib.auth.views import login, logout
 
 
-
 urlpatterns = [
-	url(r'^login/$', login, {'template_name': 'recrut/login.html'}, name='login'),
-    url(r'^logout/$', logout, {'next_page':'/'}, name='logout'),
-
+    url(r'^login/$', login, {
+        'template_name': 'recrut/login.html'}, name='login'),
+    url(r'^logout/$', logout, {'next_page': '/'}, name='logout'),
     url(r'', include('recrut.urls')),
     url(r'^admin/', admin.site.urls),
 ]
-

@@ -4,16 +4,20 @@
 
 <table class="table table">
 <thead>
+
+
+
+
 <tr>
 <th>Material ID</th><th>Name</th><th>Company ID</th><th>More</th></thead>
 </tr>
 <tbody>
 {% for material in data %}
 <tr>
-	<td>Material ID: {{material.ID}}</td>
-	<td>Name: {{material.name}}</td>
-	<td>Company ID {{material.companyID}}</td>
-	<td>Zobacz detale</td>
+	<td>{{material.ID}}</td> <!-- Material ID -->
+	<td>{{material.name}}</td> <!-- Material Name -->
+	<td>{{material.companyID}}</td> <!-- Company ID -->
+	<td>View Details</td>  <!-- View materials detil -->
 </tr>	
 
 {% endfor %}

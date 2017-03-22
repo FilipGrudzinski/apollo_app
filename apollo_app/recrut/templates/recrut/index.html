@@ -1,13 +1,15 @@
 {% extends 'recrut/base.html' %}
 
+
 {% block content %}
-<p><a href="{% url 'materialy' %}" >Zobacz wszystkie materialy</a></p></br>
 
 
 {% for company in data %}
-	<p>Nazwa firmy: {{company.companyName}}</p>
-	<p>ID firmy: {{company.companyID}}</p>
-	<p><a href="{% url 'more' company_id=company.companyID %}" >Zobacz materiały</a></p><br>
+	<p>Company Name: {{company.companyName}}</p>
+	<p>Company ID : {{company.companyID}}</p>
+	<p><a href="{% url 'company_details' company_id=company.companyID %}" >View material</a></p><br>
 {% endfor %}
+
+<p><a href="{% url 'material' %}" >View all materials</a></p>
 
 {% endblock content %}
