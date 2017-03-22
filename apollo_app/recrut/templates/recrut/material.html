@@ -17,7 +17,8 @@
 	<td>{{material.ID}}</td> <!-- Material ID -->
 	<td>{{material.name}}</td> <!-- Material Name -->
 	<td>{{material.companyID}}</td> <!-- Company ID -->
-	<td>View Details</td>  <!-- View materials detil -->
+	<td><a href="{% url 'about_material' _id=material.ID %}">
+			View Details</a></td>  <!-- View materials detil -->
 </tr>	
 
 {% endfor %}
@@ -25,3 +26,4 @@
 </table>
 
 {% endblock content %}
+
