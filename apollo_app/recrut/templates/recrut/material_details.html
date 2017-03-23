@@ -3,14 +3,11 @@
 
 {% block content %}
 
-
-
-	<p>Name: {{name}}</p>
-	<p>Description : {{description}}</p>
-	<p>Notes : {{notes}}</p>
-	<p>Supplier : {{company.companyID}}</p>
-	<p>Price : {{company.companyID}}</p>
-	<p>Currency : {{company.companyID}}</p>
-
+	<p><b>Name:</b> {{data.name}}</p><!-- Material Name -->
+	<p><b>Description:</b> {{data.description}}</p> <!-- Material description -->	
+	<p><b>Notes:</b> {{data.notes}}</p> <!-- Material notes -->
+	<p><b>Supplier:</b> {{data.supplier}}</p> <!-- Material supplier -->
+	<p><b>Price:</b> {{data.price}}</p> <!-- Material price -->
+	<p><b>Currency:</b> {{data.currency}}</p> <!-- Material currency -->
 
 {% endblock content %}
